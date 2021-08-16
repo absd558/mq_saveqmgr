@@ -1,0 +1,8 @@
+---
+- name: MQSAVEQMGR
+  hosts: all
+  gather_facts: false
+  strategy: free
+  become: true
+  roles:
+    - { role: mq_saveqmgr }
