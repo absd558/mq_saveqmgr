@@ -1,0 +1,7 @@
+# tasks file for savemq
+- name: download the file
+  get_url:
+    url: http://nexus.absa.co.za:8081/repository/middleware_automation/mq/files/ms0t_mqexplorer_9000_windows_x86_64.zip
+    dest: /tmp
+    mode: '0744'
+

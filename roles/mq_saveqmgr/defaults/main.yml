@@ -1,0 +1,6 @@
+---
+# defaults file for setting mqaut
+MQ:
+  user: mqm
+  group: mqm
+  command_path: /apps/wmq/9.1/bin
