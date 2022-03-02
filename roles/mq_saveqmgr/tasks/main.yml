@@ -1,7 +1,14 @@
+---
+# tasks to grant svc-snowmqm user access to MQ
+- name: Display queue manager
+  command: '{{ MQ.command_path }}/dspmq'
+  become: yes
+  become_user: '{{ MQ.user }}'
+  
 # tasks file for savemq
-- name: download the file
-  get_url:
-    url: http://nexus.absa.co.za:8081/repository/middleware_automation/mq/files/ms03.saveqmgr-master.zip
-    dest: /tmp
-    mode: '0744'
-
+#- name: download the file
+ #get_url:
+  #  url: http://nexus.absa.co.za:8081/repository/middleware_automation/mq/files/ms03.saveqmgr-master.zip
+   # dest: /tmp
+    #mode: '0744'
+    
